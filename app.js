@@ -11,9 +11,9 @@ closedMonkey.addEventListener('click', () => {
 });
 
 openMonkey.addEventListener('click', () => {
-    if (closedMonkey.classList.contains('close')) {
+    if (closedMonkey.classList.contains('closed')) {
         closedMonkey.classList.add('active');
-        closedMonkey.classList.remove('active');
+        openMonkey.classList.remove('active');
     }
 });
 
